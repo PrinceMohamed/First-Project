@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./New folder/all.min.css">
+  <link rel="stylesheet" href="./New folder/bootstrap.min.css">
+  <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.css">
+  <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/brands.min.css">
+  <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/js/all.js">
+  <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/js/brands.min.js">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      height: 2150px;
+      width: 100%;
+    }
+    .navbar{
+      position: sticky;
+      top: 0;
+      margin-top: 4px;
+      z-index: 9999999999999999999999999;
+    }
+    .se1{
+      background-image: url("./plane-4301615_1280.png");
+    background-size: 100% 100%;
+    height: 86vh;
+    }
+    .jumbotron{
+      transform: translate(0,110px);
+    }
+    .jumbotron h1 span {
+      color: #F80063;
+      text-shadow: 0px 1px 2px #F80063;
+    }
+    .btnjum{
+      margin-left: 40%;
+      margin-top:50px;
+      box-shadow: 0px 10px 20px #000;
+      background-color: #50BFD8;
+      color:#fff;
+      font-weight: bold;
+      animation: x forwards 1s;
+      position: relative;
+    }
+    btnjum::after{
+      content: '';
+      width: 100%;
+      background-color: #000;
+      position: absolute;
+    }
+    @keyframes x{
+      from{
+
+      }
+      to{
+
+      }
+    }
+    @media (max-width:300px) {
+      .btnjum{
+      margin-left: 25%;
+      margin-top:50px;
+      box-shadow: 0px 10px 20px #000;
+      background-color: #50BFD8;
+      color:#fff;
+      font-weight: bold;
+    } 
+    }
+    .select{
+      width: 30%;
+    }
+    .input-group1{
+      width: 30%;
+    }
+    .btnT:hover{
+        background-color: #198572;
+        color: #fff;
+      }
+      .for2 input{
+        margin-top: 50px;
+      }
+      .for2{
+        width: 30%;
+    }
+    @media (max-width:531px) {
+      .btnjum{
+        margin-top:0px;
+      }
+    }
+    @media (max-width:531px) {
+      body{
+        height: 2650px;
+        width: 100%;
+      }
+      .for2{
+        width: 75%;
+      }
+      .select{
+        width: 75%;
+    }
+    .input-group1{
+      width: 75%;
+    }
+  }
+  .btnT{
+      background-color: #0C4F43;
+      color: #fff;
+      opacity: 1;
+      animation: Y forwards 1s;
+  }
+  .btnT::after{
+    content: '';
+    width: 100%;
+    height: 40px;
+    background-color: #000;
+    position: absolute;
+    bottom: 30px;
+  }
+  /* .div1{
+    width: 130px;
+    height: 30px;
+    background-color: #000;
+      /* display: none; */
+    /* } */
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="font-weight: bold;">Prince Trek</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Trips</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Immigration</a></li>
+              <li><a class="dropdown-item text-info" style="font-weight: bold;" href="index1.html">Currency change</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="./index2.html">Connect with us</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success btnnav" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid se1 d-flex justify-content-center">
+    <div class="jumbotron">
+      <h1 class="display-4 text-center text-capitalize" style="font-weight: bold;letter-spacing: 5px;"><span class="sp1"></span>,Sir</h1>
+      <p class="lead">Hello sir, you are now in the currency exchange section. Here you will learn about the prices and different currencies</p>
+      <hr class="my-4">
+      <p>Here you can know currency rates and change to and from them</p>
+      <a class="btn btn-lg btnjum" href="#" role="button">Learn more</a>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <h2 class="text-center mt-5">Currency Table</h2>
+    <table class="table mt-5 text-center">
+      <thead>
+        <tr>
+          <th>Currency</th>
+          <th>Country</th>
+          <th>Value in USD</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>US Dollar</td>
+          <td>United States</td>
+          <td>$1.00</td>
+        </tr>
+        <tr>
+          <td>Euro</td>
+          <td>European Union</td>
+          <td>$0.85</td>
+        </tr>
+        <tr>
+          <td>Japanese Yen</td>
+          <td>Japan</td>
+          <td>$110.00</td>
+        </tr>
+        <tr>
+          <td>British Pound</td>
+          <td>United Kingdom</td>
+          <td>$0.74</td>
+        </tr>
+        <tr>
+          <td>Canadian Dollar</td>
+          <td>Canada</td>
+          <td>$1.26</td>
+        </tr>
+        <tr>
+          <td>Australian Dollar</td>
+          <td>Australia</td>
+          <td>$1.35</td>
+        </tr>
+        <tr>
+          <td>Swiss Franc</td>
+          <td>Switzerland</td>
+          <td>$0.92</td>
+        </tr>
+        <tr>
+          <td>Indian Rupee</td>
+          <td>India</td>
+          <td>$73.19</td>
+        </tr>
+        <tr>
+          <td>Chinese Yuan</td>
+          <td>China</td>
+          <td>$6.45</td>
+        </tr>
+        <tr>
+          <td>Russian Ruble</td>
+          <td>Russia</td>
+          <td>$79.53</td>
+        </tr>
+        <tr>
+          <td>South Korean Won</td>
+          <td>South Korea</td>
+          <td>$1,175.92</td>
+        </tr>
+        <tr>
+          <td>Brazilian Real</td>
+          <td>Brazil</td>
+          <td>$5.27</td>
+        </tr>
+        <tr>
+          <td>Mexican Peso</td>
+          <td>Mexico</td>
+          <td>$20.37</td>
+        </tr>
+        <tr>
+          <td>Saudi Riyal</td>
+          <td>Saudi Arabia</td>
+          <td>$3.75</td>
+        </tr>
+        <tr>
+          <td>South African Rand</td>
+          <td>South Africa</td>
+          <td>$14.41</td>
+        </tr>
+        <tr>
+          <td>Turkish Lira</td>
+          <td>Turkey</td>
+          <td>$8.45</td>
+        </tr>
+        <tr>
+          <td>Swedish Krona</td>
+          <td>Sweden</td>
+          <td>$8.60</td>
+        </tr>
+        <tr>
+          <td>Emirati Dirham</td>
+          <td>United Arab Emirates</td>
+          <td>$3.67</td>
+        </tr>
+        <tr>
+          <td>Singapore Dollar</td>
+          <td>Singapore</td>
+          <td>$1.36</td>
+        </tr>
+        <tr>
+          <td>New Zealand Dollar</td>
+          <td>New Zealand</td>
+          <td>$1.43</td>
+        </tr>
+        <!-- Add more rows for other currencies -->
+      </tbody>
+    </table>
+  </div>
+  <hr class="w-75 m-auto mt-5">
+  <div class="container-fluid">
+    <form class="form-group">
+      <h2 class="mt-5 text-center">Currency Selector</h2>
+      <div class="form-group d-flex justify-content-center flex-column mt-5 align-items-center ">
+      <hr class="w-75 m-auto">
+        <div class="form-group-1 w-100 d-flex justify-content-center align-items-center flex-column mt-5">
+      <label class="form-label " for="currencySelect">Select Currency:</label>
+        <select class="form-control select" id="currencySelect">
+          <option class=""value="">Choose a currency</option>
+          <option class="USD" value="30.90">US Dollar (USD)</option>
+          <option class="EUR" value="32.99">Euro (EUR)</option>
+          <option class="JPY" value="0.21">Japanese Yen (JPY)</option>
+          <option class="GBP" value="38.27">British Pound (GBP)</option>
+          <option class="CAD" value="22.89">Canadian Dollar (CAD)</option>
+          <option class="AUD" value="AUD">Australian Dollar (AUD)</option>
+          <option class="CHF" value="19.87">Swiss Franc (CHF)</option>
+          <option class="INR" value="0.37">Indian Rupee (INR)</option>
+          <option class="CNY" value="4.24">Chinese Yuan (CNY)</option>
+          <option class="RUB" value="0.32">Russian Ruble (RUB)</option>
+          <option class="KRW" value="0.023">South Korean Won (KRW)</option>
+          <option class="BRL" value="6.37">Brazilian Real (BRL)</option>
+          <option class="MXN" value="1.80">Mexican Peso (MXN)</option>
+          <option class="SAR" value="8.24">Saudi Riyal (SAR)</option>
+          <option class="ZAR" value="1.63">South African Rand (ZAR)</option>
+          <option class="TRY" value="1.14">Turkish Lira (TRY)</option>
+          <option class="SEK" value="2.76">Swedish Krona (SEK)</option>
+          <option class="AED" value="8.41">Emirati Dirham (AED)</option>
+          <option class="SGD" value="22.65">Singapore Dollar (SGD)</option>
+          <option class="NZD" value="18.26">New Zealand Dollar (NZD)</option>
+        </select>
+      </form>
+      <input class="form-control input-group1 mt-2" type="text" value="Pound" readonly>
+            </div>
+            <form class="form-group for2 d-flex justify-content-center align-items-center flex-column">
+              <input type="number" class="form-control inum">
+              <input type="text" class="form-control itext" readonly>
+              <button class="btn btn-primary mt-4">Transformation</button>
+              <div class="div1"></div>
+            </form>
+    </div>
+  </div>
+  <script src="./New folder/all.min.js"></script>
+  <script src="./New folder/bootstrap.bundle.min.js"></script>
+  <script src="./fontawesome-free-6.4.2-web/js/all.js"></script>
+  <script src="./fontawesome-free-6.4.2-web/js/brands.min.js"></script>
+  <script src="./index1.js"></script>
+</body>
+</html>
